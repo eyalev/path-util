@@ -23,6 +23,10 @@ class Path:
         return self.pathlib.suffix != ''
 
     @property
+    def exists(self):
+        return self.pathlib.exists()
+
+    @property
     def is_file_like(self):
 
         if self.has_suffix:
